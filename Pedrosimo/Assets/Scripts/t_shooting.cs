@@ -29,12 +29,12 @@ public class t_shooting : MonoBehaviour
 
     public void XrayOff(SteamVR_Action_Boolean fromAction, SteamVR_Input_Sources fromSource)
     {
-        m_Xray.SetFloat("Vector1_742C10B3", 0f);
+        m_Xray.SetFloat("Vector1_545B4A0A", 0f);
     } 
 
     public void XrayOn(SteamVR_Action_Boolean fromAction, SteamVR_Input_Sources fromSource)
     {
-        m_Xray.SetFloat("Vector1_742C10B3", 1.25f);
+        m_Xray.SetFloat("Vector1_545B4A0A", 0.5f);
     }
 
     public void TriggerDown(SteamVR_Action_Boolean fromAction, SteamVR_Input_Sources fromSource)
