@@ -5,7 +5,7 @@
       "app_key": "application.generated.unity.pedrosimo.exe",
       "launch_type": "url",
       "url": "steam://launch/",
-      "action_manifest_path": "C:\\Users\\Gufis\\Desktop\\Unity mainly\\Pedrosimo\\actions.json",
+      "action_manifest_path": "C:\\Users\\Gufis\\Documents\\GitHub\\Pedrosimo\\Pedrosimo\\actions.json",
       "strings": {
         "en_us": {
           "name": "Pedrosimo [Testing]"
