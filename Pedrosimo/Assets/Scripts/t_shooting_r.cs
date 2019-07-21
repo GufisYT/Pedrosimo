@@ -5,6 +5,7 @@ using Valve.VR;
 
 public class t_shooting_r : MonoBehaviour
 {
+    public Light SlowEffect;
     public SteamVR_Action_Boolean t_Shoot;
     public SteamVR_Action_Boolean t_SlowTime;
     public SteamVR_Input_Sources t_hand;
@@ -28,11 +29,13 @@ public class t_shooting_r : MonoBehaviour
 
     public void GripDown(SteamVR_Action_Boolean fromAction, SteamVR_Input_Sources fromSource)
     {
+        SlowEffect.intensity = 1.2f;
         Time.timeScale = 0.25f;
     }
 
     public void GripUp(SteamVR_Action_Boolean fromAction, SteamVR_Input_Sources fromSource) 
     {
+        SlowEffect.intensity = 0f;
         Time.timeScale = 1f;
     }
 

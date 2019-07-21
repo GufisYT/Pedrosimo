@@ -5,6 +5,7 @@ using Valve.VR;
 
 public class t_shooting : MonoBehaviour
 {
+    public Light XrayEffect;
     public Material m_Xray;
     public SteamVR_Action_Boolean t_Shoot;
     public SteamVR_Action_Boolean t_Xray;
@@ -29,11 +30,13 @@ public class t_shooting : MonoBehaviour
 
     public void XrayOff(SteamVR_Action_Boolean fromAction, SteamVR_Input_Sources fromSource)
     {
+        XrayEffect.intensity = 0f;
         m_Xray.SetFloat("Vector1_545B4A0A", 0f);
     } 
 
     public void XrayOn(SteamVR_Action_Boolean fromAction, SteamVR_Input_Sources fromSource)
     {
+        XrayEffect.intensity = 1.25f;
         m_Xray.SetFloat("Vector1_545B4A0A", 0.5f);
     }
 
