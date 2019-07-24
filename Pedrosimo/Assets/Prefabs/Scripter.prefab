@@ -46,6 +46,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a432e54760cf46f478481e252e9997aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  XrayEffect: {fileID: 0}
   m_Xray: {fileID: 2100000, guid: 5400c718a5e04f849be8381dde9066e1, type: 2}
   t_Shoot:
     actionPath: /actions/Main/in/Shoot
@@ -67,13 +68,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 670af480bfc807c43b061413e9b8bfc9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  t_Shoot:
-    actionPath: /actions/Main/in/Shoot
-    needsReinit: 0
-  t_SlowTime:
-    actionPath: /actions/Main/in/SlowTime
-    needsReinit: 0
-  t_hand: 2
+  m_Action:
+    actionSetPath: /actions/Main
+  SlowEffect: {fileID: 0}
   pistolS_r: {fileID: 0}
 --- !u!114 &460546775352339432
 MonoBehaviour:
